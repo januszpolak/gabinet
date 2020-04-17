@@ -40,12 +40,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    height: 5vh;
     padding: 0 5%;
     z-index: 100;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 1% 1%;
-    background: transparent;
+    background: white;
+
+    @media (max-width:770px) {
+        background-color: transparent;
+    }
 }
 
 .nav {
@@ -73,6 +79,7 @@ a {
     &:hover {
         text-shadow: 11px 1px 9px rgb(221, 24, 24);
         color: red;
+
 
     }
 }
@@ -134,7 +141,7 @@ a {
         color: $main-color;
         font-size: 32px;
         transition: .3s;
-        z-index: 5;
+        z-index: 500;
 
 
     }
@@ -145,11 +152,13 @@ a {
     height: 100vh;
     width: 100%;
 
+
     @media (max-width:770px) {
-        background-image: url('./flower.png');
+        background-image: url('./leafs.png');
         background-repeat: no-repeat;
         background-size: cover;
         background-position-y: bottom;
+
 
     }
 
@@ -158,10 +167,10 @@ a {
 
     &__info {
         position: absolute;
-        bottom: 0;
+        bottom: 5%;
         right: 0;
         text-align: right;
-        padding: 5% 10% 10% 10%;
+        padding: 5% 10% 15% 10%;
         background-color: white;
         animation: moveright 4s ease-in-out;
         overflow: hidden;
@@ -373,7 +382,7 @@ a {
         @media (max-width: 766px) {
             margin: auto 0;
             width: 70%;
-            margin-top: 5%;
+            margin-top: 40%;
         }
     }
 

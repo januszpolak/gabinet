@@ -23,6 +23,7 @@
         <nav class="nav">
 
             <ul class="nav__ul">
+                <li class="nav__li"><a href="#" id='main'><i class="fa fa-home" aria-hidden="true"></i></a></li>
                 <li class="nav__li"><a href="#" id='me'>O mnie</a></li>
                 <li class="nav__li"><a href="#" id='room'>Gabinet</a></li>
                 <li class="nav__li"><a href="#" id='services'>Usługi</a></li>
@@ -150,9 +151,15 @@
     </section>
 
     <section class="contact">
-        <div data-aos="flip-left" data-aos-duration="2000" class="contact__map"><iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1282.493498902829!2d20.04349927352029!3d49.99285322571846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1586197280099!5m2!1spl!2spl"
-                width="500" height="350"></iframe></div>
+        <div data-aos="flip-left" data-aos-duration="2000" class="contact__map">
+            <form action="form.php" method="POST">
+                <label>Imię <input type="name" required></label><br>
+                <label>Nazwisko <input type="surname" required></label><br>
+                <label>email <input type="email" required></label><br>
+                <textarea name="message" cols="50" rows="10" placeholder="Tresć wiadomości ..." required></textarea><br>
+                <input type="submit" value="Wyślij">
+            </form>
+        </div>
 
         <div class="contact__info" data-aos="zoom-in-up" data-aos-duration="3000">
             <img src="./logo.png" alt="Artur Tebień psycholog" class="logo" id="logo">

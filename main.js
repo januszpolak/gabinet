@@ -1,3 +1,8 @@
+$('#main').on('click', function () {
+    $('body, html').animate({
+        scrollTop: $('.main').offset().top
+    }, 1000)
+})
 $('#me').on('click', function () {
     $('body, html').animate({
         scrollTop: $('.me').offset().top
