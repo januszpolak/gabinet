@@ -46,13 +46,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1% 1%;
+    margin: 1% auto;
     background: white;
+
 
     @media (max-width:770px) {
         background-color: transparent;
     }
 }
+
 
 .nav {
     width: 40%;
@@ -151,6 +153,7 @@ a {
     position: relative;
     height: 100vh;
     width: 100%;
+    background-color: white;
 
 
     @media (max-width:770px) {
@@ -177,7 +180,7 @@ a {
         width: 100%;
 
         @media (max-width:1190px) {
-            top: 45%;
+            bottom: 0%;
             width: 100%;
         }
 
@@ -248,7 +251,7 @@ a {
     & a {
         display: flex;
         align-items: center;
-        padding-bottom: 1%;
+        padding: 1% 0;
         font-size: 12px;
     }
 
