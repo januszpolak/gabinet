@@ -153,7 +153,7 @@ a {
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: white;
+
 
 
     @media (max-width:770px) {
@@ -287,6 +287,24 @@ a {
             padding: 3%;
             font-size: 15px;
         }
+
+        & h1::after {
+            content: 'mgr Artur Tebień';
+            position: absolute;
+            left: 10%;
+            top: 0;
+            font-size: 100%;
+            color: rgba(0, 0, 0, 0.1);
+            animation: mgr 40s infinite;
+
+
+        }
+
+        @keyframes mgr {
+            50% {
+                transform: scale(4);
+            }
+        }
     }
 
     &__picture {
@@ -304,31 +322,66 @@ a {
 }
 
 .room {
-    display: flex;
+    position: relative;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+    & h1 {
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        font-family: $main-font;
+
+        &::before {
+            content: 'Gabinet PROGRES';
+            position: absolute;
+            left: -50%;
+            color: rgba(0, 0, 0, 0.1);
+            animation: gab 40s infinite;
+        }
 
 
-    @media (max-width: 766px) {
-        min-height: 100vh;
+        @keyframes gab {
+            50% {
+                transform: scale(4);
+            }
+        }
+
+
     }
 
-    &__images {
-        margin: 35vh auto 5% auto;
-        transition: .3s;
+    &__pictures {
+        margin: 30vh auto;
+        width: 80%;
+        height: 80vh;
+        background-size: cover;
+        animation: bcg 20s infinite;
+    }
 
-        &:hover {
-            opacity: .5;
+    @keyframes bcg {
+        0% {
+            background-image: url('./IMG_20200418_162810.jpg');
         }
 
-        @media (max-width: 766px) {
-            width: 320px;
-            height: 240px;
-            margin: 15% auto;
+        25% {
+            background-image: url('./IMG_20200417_123011.jpg');
+
         }
+
+        50% {
+            background-image: url('./IMG_20200417_123046.jpg');
+        }
+
+        75% {
+            background-image: url('./IMG_20200418_162820.jpg');
+        }
+
+        100% {
+            background-image: url('./IMG_20200418_162810.jpg');
+        }
+
+
     }
 }
 
