@@ -417,6 +417,9 @@ a {
 
 .services {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 100vh;
     overflow: hidden;
@@ -426,12 +429,14 @@ a {
         min-height: 100vh;
     }
 
-    &__prices {
-        display: block;
-        font-family: $main-font;
-        font-size: 24px;
-        margin: 35vh auto 5% auto;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 30%;
+        justify-content: center;
+        align-items: center;
     }
+
 }
 
 .contact {
