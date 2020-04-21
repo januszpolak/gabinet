@@ -416,8 +416,9 @@ a {
 }
 
 .services {
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
@@ -435,7 +436,48 @@ a {
         flex-basis: 30%;
         justify-content: center;
         align-items: center;
+        padding-top: 15%;
+
+        @media (max-width: 766px) {
+            flex-basis: 100%;
+            padding-top: 30%;
+        }
     }
+
+    & p {
+        padding: 5%;
+    }
+
+    & h1 {
+        display: block;
+        position: absolute;
+        top: 15%;
+        right: 15%;
+
+        &:after {
+            content: 'Zapraszam na ...';
+            display: block;
+            position: absolute;
+            top: 10%;
+            color: rgba(0, 0, 0, 0.1);
+            animation: zapraszam 40s infinite;
+
+
+        }
+
+        @keyframes zapraszam {
+            50% {
+                transform: scale(4);
+            }
+        }
+
+        @media (max-width: 766px) {
+            top: 3%;
+            right: 3%;
+        }
+    }
+
+
 
 }
 
