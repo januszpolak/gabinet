@@ -22,11 +22,24 @@ $main-color:black;
     flex-direction: column;
     z-index: 999;
 
+    @media (max-width: 770px) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
     & img {
         width: 40px;
         height: auto;
         padding: 10px 0;
         transition: .3s;
+
+        @media (max-width: 770px) {
+            width: 30px;
+        }
 
         &:hover {
             transform: scale(1.2);
