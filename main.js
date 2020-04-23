@@ -44,6 +44,8 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('ham_active')
 
 });
+
+
 for (let i in lists) {
     lists[i].onclick = function () {
         menu.classList.toggle('active')
@@ -72,3 +74,10 @@ $('#contact-mobile').on('click', function () {
         scrollTop: $('.contact').offset().top
     }, 1000)
 })
+
+
+
+menu.onclick = function () {
+    menu.classList.remove('active')
+    hamburger.classList.toggle('ham_active')
+};
