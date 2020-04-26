@@ -72,6 +72,7 @@ header {
 .nav {
     width: 40%;
 
+
     @media (max-width:770px) {
         display: none;
     }
@@ -81,9 +82,12 @@ header {
     display: flex;
     justify-content: space-around;
     list-style: none;
+
+
 }
 
 a {
+    display: block;
     text-decoration: none;
     text-transform: uppercase;
     transition: .3s;
@@ -94,6 +98,7 @@ a {
     &:hover {
         text-shadow: 11px 1px 9px rgb(221, 24, 24);
         color: red;
+        transform: scale(1.2);
 
 
     }
@@ -530,14 +535,14 @@ a {
 
     &__info {
         display: block;
-        margin-top: 15%;
+        margin-top: 5%;
         text-align: center;
         background-color: #fff;
 
         @media (max-width: 766px) {
             margin: auto 0;
             width: 70%;
-            margin-top: 20%;
+            margin-top: 5%;
         }
     }
 
