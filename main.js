@@ -79,5 +79,5 @@ $('#contact-mobile').on('click', function () {
 
 menu.onclick = function () {
     menu.classList.remove('active')
-    hamburger.classList.toggle('ham_active')
+    hamburger.classList.remove('ham_active')
 };
