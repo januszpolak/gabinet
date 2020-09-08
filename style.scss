@@ -191,6 +191,9 @@ a {
     width: 100%;
     .green {
       color: #295d0c;
+      @media (max-width: 1190px) {
+        font-size: 10px;
+      }
     }
 
     @media (max-width: 1190px) {
