@@ -184,25 +184,18 @@ a {
     bottom: 5%;
     right: 0;
     text-align: right;
-    padding: 5% 10% 15% 10%;
+    padding: 5% 10% 5% 10%;
     background-color: white;
     animation: moveright 4s ease-in-out;
     overflow: hidden;
     width: 100%;
+    .green {
+      color: #295d0c;
+    }
 
     @media (max-width: 1190px) {
       bottom: 10%;
       width: 100%;
-    }
-
-    &::after {
-      content: "zapraszam mgr Artur Tebień, terapeuta uzależnień, mediator sądowy, specjalista pomocy psychologicznej, interwent kryzysowy ";
-      color: red;
-      font-family: $main-font;
-
-      @media (max-width: 1190px) {
-        font-size: 10px;
-      }
     }
 
     @media (max-width: 766px) {
